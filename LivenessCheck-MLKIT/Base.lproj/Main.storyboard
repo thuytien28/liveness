@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r7i-Y9-E78">
+    <device id="ipad10_5" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Liveness Check View Controller-->
+        <scene sceneID="iy9-3x-mrP">
+            <objects>
+                <viewController storyboardIdentifier="LivenessCheckViewController" id="r7i-Y9-E78" customClass="LivenessCheckViewController" customModule="LivenessCheck_MLKIT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Kd-eA-ag9">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LZm-bx-MGd">
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Follow Steps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDE-fB-8Ak">
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" id="G8c-DH-tst">
+                                <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" id="3xa-IG-B6M">
+                                <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" id="wfU-bZ-LGW">
+                                <rect key="frame" x="-9" y="0.0" width="1000" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2da-o1-3lO">
+                               <color key="backgroundColor"  white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                               <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                               <state key="normal" title="Reset">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <!-- <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/> -->
+                                <!-- <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state> -->
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="t7F-iy-7um"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ad9-bY-0KE"/>
+                    <connections>
+                        <outlet property="buttonReset" destination="2da-o1-3lO" id="dJE-D7-3qu"/>
+                        <outlet property="imageLeft" destination="G8c-DH-tst" id="W8k-ir-pYB"/>
+                        <outlet property="imageRight" destination="3xa-IG-B6M" id="4Ms-eq-S68"/>
+                        <outlet property="imageSmile" destination="wfU-bZ-LGW" id="xlw-29-JPB"/>
+                        <outlet property="stepIndicator" destination="zDE-fB-8Ak" id="6vF-Z8-jgR"/>
+                        <outlet property="videoPreview" destination="LZm-bx-MGd" id="Ae8-lQ-nPw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a7y-wu-RHl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2047.4820143884895" y="63.129496402877699"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
